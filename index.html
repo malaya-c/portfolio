@@ -2,54 +2,146 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  <style>
-    html,
-    body {
-      background-size: cover;
-      background-position: center;
-      height: 100%;
-    }
-  </style>
+  <title>Malaya Conell's Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="d-flex flex-column bg-gradient">
+<body>
+  <nav class="navbar fixed-top navbar-expand-md border-bottom border-body" data-bs-theme="dark">
 
+    <div class="container-fluid">
+
+      <a href="#home" class="navbar-brand">
+        <i class="bi bi-house-door"></i>
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="nav-collapse" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#missions" class="nav-link">Missions</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
   <!--main content-->
-  <div class="container flex-grow-1">
-    <div class="d-flex justify-content-end">
-      <button type="button" class="btn btn-outline-dark">button 1</button>
-      <button type="button" class="btn btn-outline-dark">button 2</button>
-      <button type="button" class="btn btn-outline-dark">button 3</button>
-      <button type="button" class="btn btn-outline-dark">button 4</button>
+  <header id="home" class="text-center">
+    <div class="container rounded-circle-container text-center mt-5">
+      <img src="img/pfp.jpg" alt="headshot" class="img-fluid rounded-circle">
+      <h1 class="h3">Malaya Conell</h1>
+      <h4 class="h6">Software Developer</h4>
     </div>
+  </header>
 
-    <div class="d-flex justify-content-center">
-      <h1 class="display-2 text-success">Malaya Conell</h1>
+  <section id="missions">
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">My Mission</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="img/computer.jpg" alt="A picture of a computer." class="img-fluid">
+        </div>
+        <div class="col-md-6 mt-2">
+          <span class="d-block text-center">"As a aspiring web developer, my mission is to continuously enhance my
+            skills
+            and expertise in crafting innovative and impactful websites that empower businesses
+            to thrive in the digital landscape. With a commitment to excellence, I strive to leverage cutting-edge
+            technologies and best practices to deliver tailored solutions that not only meet but exceed the unique needs
+            and objectives of each client. Through collaborative partnerships and a deep understanding of business
+            goals,
+            I aim to contribute to the success and growth of companies by creating engaging and user-centric online
+            experiences
+            that drive results and foster long-term relationships."</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <section class="container my-5">
-      <h2>About Me</h2>
-      <p>I'm currently pursuing a B.S. in Computer Science at Virginia Commonwealth University (VCU), with a
-        concentration
-        in Cybersecurity.
-        I have a passion for both software development and security, and I’m always eager to learn about
-        how technology can be used to protect systems and data. In addition to my technical interests, I’m also deeply
-        involved in music.
-        I play piano and keys at my local church, and I find that music helps me stay creative and inspired, both in and
-        out of my tech work.
-        I’m excited to apply my skills in software engineering and cybersecurity to real-world challenges,
-        and I look forward to contributing to innovative projects!</p>
-    </section>
 
-  </div>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Malaya Conell</p>
+
+  <section id="skills" class="d-flex justify-content-center align-items-center min-vh-100" data-bs-theme="dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <i class="bi bi-code-slash fs-2 me-2"></i>
+            <p class="mt-2">HTML5</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <i class="bi bi-palette fs-2 me-2"></i>
+            <p class="mt-2">CSS3</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <i class="bi bi-bootstrap fs-2 me-2"></i>
+            <p class="mt-2">Bootstrap</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="d-flex justify-content-center align-items-center">
+            <i class="bi bi-filetype-js fs-2 me-2"></i>
+            <p class="mt-2">JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="container mt-5">
+      <h2 class="text-center text-white mb-4">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4 text-white text-center">
+          <i class="bi bi-linkedin fs-2"></i>
+          <p class="mt-2">LinkedIn</p>
+        </div>
+        <div class="col-md-4 mb-4 text-white text-center">
+          <i class="bi bi-chat-dots fs-2"></i>
+          <p class="mt-2">Chat</p>
+        </div>
+        <div class="col-md-4 mb-4 text-white text-center">
+          <i class="bi bi-envelope fs-2"></i>
+          <p class="mt-2">Email</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-6">
+          <p class="fw-lighter">&copy; Malaya Conell 2024</p>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
